@@ -11,3 +11,31 @@ org.hibernate.id.IdentifierGenerator interface
 	select
 	foreign
 	sequence-identity
+
+
+===========
+   ClassLoaderService= org.hibernate.boot.registry.classloading.spi.ClassLoaderService
+   StrategySelector= org.hibernate.boot.registry.selector.spi.StrategySelector
+   IntegratorService =org.hibernate.integrator.spi.IntegratorService
+
+    StandardServiceRegistryImpl{
+         BootstrapServiceRegistryImpl
+    }
+    TypeResolver{
+        BaiscTypeRegsitry ( java type - sql type mapping)
+    }
+
+ org.hibernate.service.internal.AbstractServiceRegistryImpl : Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+ org.hibernate.service.internal.AbstractServiceRegistryImpl : Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+ org.hibernate.service.internal.AbstractServiceRegistryImpl : Initializing service [role=org.hibernate.engine.spi.CacheImplementor]
+ org.hibernate.type.TypeFactory : Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@11e33bac
+
+
+
+org.hibernate.boot.cfgxml.spi.CfgXmlAccessService -
+
+
+org.hibernate.engine.config.spi.ConfigurationService
+
+
+  org.hibernate.service.StandardServiceInitiators - contains all initiators( role)
