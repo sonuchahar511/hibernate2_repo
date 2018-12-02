@@ -1,0 +1,13 @@
+org.hibernate.id.IdentifierGenerator interface
+	assigned-- It is the default generator strategy if there is no <generator> element .
+	increment
+	sequence
+	hilo
+	native
+	identity
+	seqhilo
+	uuid
+	guid
+	select
+	foreign
+	sequence-identity
